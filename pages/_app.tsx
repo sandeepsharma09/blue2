@@ -3,7 +3,7 @@ import AnalyticsProvider, {
 } from 'components/AnalyticsProvider'
 initializeAnalytics()
 
-import { Inter } from "next/font/google"
+
 import type { AppContext, AppProps } from 'next/app'
 import { default as NextApp } from 'next/app'
 import { ThemeProvider, useTheme } from 'next-themes'
@@ -38,9 +38,7 @@ import ChainContextProvider from 'context/ChainContextProvider'
 
 // import { Mumbai, Goerli,Ethereum, Arbitrum, ArbitrumGoerli } from "@thirdweb-dev/chains";
 //CONFIGURABLE: Use nextjs to load your own custom font: https://nextjs.org/docs/basic-features/font-optimization
-const inter = Inter({
-  subsets: ['latin'],
-})
+
 ////////////////////start/////////////////
 import {
 
@@ -97,8 +95,7 @@ export const NORMALIZE_ROYALTIES = process.env.NEXT_PUBLIC_NORMALIZE_ROYALTIES
 
 //CONFIGURABLE: Here you can override any of the theme tokens provided by RK: https://docs.reservoir.tools/docs/reservoir-kit-theming-and-customization
 const reservoirKitThemeOverrides = {
-  headlineFont: inter.style.fontFamily,
-  font: inter.style.fontFamily,
+
   primaryColor: '#6E56CB',
   primaryHoverColor: '#644fc1',
 }
