@@ -132,6 +132,12 @@ const Navbar = () => {
                 Deploy Contract
               </NavItem>
             </Link>
+            <Link href="/list">
+              <NavItem active={router.pathname == '/list'}>
+                Your Contracts
+              </NavItem>
+            </Link>
+
             <Link href="/collection-rankings">
               <NavItem active={router.pathname == '/collection-rankings'}>
                 Collections
